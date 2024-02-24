@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rheinmetall leopard 2</title>
+</head>
+    <link rel="stylesheet" href="style e-commerce.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="./assets/rheinmetall1.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    img {
+        user-select: none;
+        pointer-events: none;
+    }
+    :root {
+        --color-primary: #212121;
+    }
+
+    nav {
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #FFFFFF;
+    }
+    .nav {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 32px;
+    }
+    .nav img,
+    .footer img {
+        width: 200px;
+    }
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 70px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: var(--color-primary);
+        position: relative;
+    }
+    .nav ul li a:after {
+        width: 100%;
+        bottom: -4px;
+        height: 2px;
+        background-color: var(--color-primary);
+        content: '';
+        position: absolute;
+        transition: .3s ease;
+        transform: scale(0);
+        left: 0;
+    }
+    .nav ul li:hover a::after {
+        transform: scale(1);
+    }
+
+
+    section, footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-landing-page {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        position: relative;
+    }
+    .irhan {
+        position: absolute;
+        right: 50px;
+        top: 120px;
+        max-width: 360px;
+        color: #ffffff;
+        backdrop-filter: blur(6px);
+        padding: 32px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .irhan h1 {
+        font-size: 50px;
+        mix-blend-mode: exclusion;
+    }
+    .landing-page img {
+        width: 100%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        gap: 20px;
+        background-color: #2c2c2e;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    /* first-page */
+    .container-first-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1600px;
+        background-color: #62647D;
+    }
+    .top, .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first-page h1 {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 42px;
+        color: #FFFFFF;
+    }
+    .first-page img {
+        width: 50%;
+    }
+    .footer {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        padding: 32px 20px;
+        justify-content: space-between;
+        background-color: #D1D2D2;
+        align-items: center;
+    }
+    .footer i {
+        cursor: pointer;
+        font-size: 40px;
+    }
+    .footer i:hover {
+        transform: translateY(-13px);
+        transition: .3s ease;
+    }
+    .social-media {
+        display: flex;
+        gap: 16px;
+    }
+    .produk {
+        inline-size: 100%;
+        block-size: 100vh;
+        background-color: #2c2c2e;
+        padding: 0 50px;
+    }
+    .produk .container-card {
+        inline-size: 100%;
+        block-size: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .produk .card {
+        inline-size: 280px;
+        background: linear-gradient(135deg, #FFFFFF 120%, #FFFFFF20 -20%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 25px;
+        transition: .3s ease;
+    }
+    .produk .card:hover {
+        transform: translateY(-30px);
+        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+    }
+    .produk .card img {
+        inline-size: 250px;
+        border-radius: 10px;
+        margin-block-end: 32px;
+    }
+    .h1 {
+        color: #ffffff;
+        font-size: 42px;
+        padding-top: 60px;
+        text-align: center;
+    }
+    </style>
+<body>
+    <nav>
+        <div class="nav">
+            <img src="./assets/rheinmetall1.png">
+            <ul>
+                <li><a href="https://wiki.warthunder.com/Leopard_2A6">Order</a></li>
+                <li><a href="https://www.rheinmetall.com/en">About</a></li>
+                <li><a href="https://www.alamy.com/stock-photo/rheinmetall-defence.html?sortBy=relevant">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="landing-page">
+        <div class="container-landing-page">
+            <img src="./assets/leo2a6.jpg">
+        </div>
+        <div class="irhan">
+            <h1>Leopard tank series</h1>
+            <h3>DEstroy your enemies with this big cat, armed with wide option of weapons, from 120mm l/44 to l/55 version. with goofy  ahh mtu mb 873 ka-501 v12 liquid cooled that can produce 1500 hp, drive this tank like a sports car in the sunshine morning</h3>
+        </div>
+        <div class="wrapper">
+            <img src="./assets/big goofy ahh ammunition no bg version.png">
+            <div class="card">
+                <h3>phew look at that beauty 120 mm dm 63 ammunition,that thing will slap any commies ahead very easily of course.</h3>
+            </div>
+            <img src="./assets/leo2 engine.jpg">
+            <div class="card">
+                <h3>ahh yes look at that massive engine too, actally of course this thing more powerfull than average family car engine.</h3>
+            </div>
+            <img src="./assets/thicc armor of leo 2 no bg.png">
+            <div class="card">
+                <h3>good tank of course have good protection,and this beast have every single thing about that of course.</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="produk">
+        <div class="h1">Recommended Products</div>
+        <div class="container-card">
+          <div class="card">
+            <a href="https://wiki.warthunder.com/Leopard_2A6">
+            <img src="leopard2a6" alt="load dulu bang">
+            </a>
+            <h1>Leopard 2a6</h1>
+          </div>
+          <div class="card">
+            <a href="https://www.wikiwand.com/en/Leopard_1">
+            <img src="leopard1" alt="load dulu bang">
+            </a>
+            <h1>Leopard 1</h1>
+          </div>
+          <div class="card">
+            <a href="https://21stcenturyasianarmsrace.com/2020/08/13/singaporean-leopard-2-tanks-are-equipped-for-urban-warfare/">
+              <img src="leopard2sg" alt="load dulu bang">
+            </a>
+            <h1>Leopard 2 SG</h1>
+          </div>
+        </div>
+      </section>
+
+    <section class="first-page">
+        <div class="container-first-page">
+            <div class="top">
+                <h1>well here's more footage of that beautiful tank</h1>
+                <img src="./assets/armor-kampeskadronen-leopard-2-leopard-2a4no-wallpaper-preview.jpg">
+            </div>
+            <div class="bottom">
+                <img src="./assets/leo2no.jpg">
+                <h1>beautiful isn't?<br><br>if you say so, go and order it for motherland now!!</h1>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <img src="./assets/rheinmetall1.png">
+            <h3>Copyright by Rajindra Sirhan</h3>
+            <div class="social-media">
+                <i class="bi bi-instagram" onclick="location.href='https://www.instagram.com/'"></i>
+                <i class="bi bi-facebook" onclick="location.href='https://www.facebook.com/'"></i>
+                <i class="bi bi-youtube" onclick="location.href='https://www.youtube.com/'"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
